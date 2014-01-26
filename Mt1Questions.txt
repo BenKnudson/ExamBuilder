@@ -1,0 +1,26 @@
+Who likes chicken?
+v
+\choice Only me 
+\choice Only your mother
+\correctchoice Everybody
+\choice Nobody 
+\choice Only cats 
+Obviously, everybody likes chicken, what else needs to be said? 
+
+Look at the accompanying image of a llama, how many teeth are visible?  \includegraphics[width = 2in]{llama.jpg} 
+h 
+\correctchoice 4 
+\choice 2 
+\choice 5 
+\choice 63 
+\choice 9 
+There were 4 visible, that other thing is a breath-mint.  
+
+If I code at 3 lines a minute, how long will it take me to write 600 lines? 
+v 
+\correctchoice 200 min 
+\choice 3 min 
+\choice 63 days
+\choice until the end of time
+\choice 100 min
+To calculate the time we will use unit conversion\\ $600 lines \cdot \frac{1 min}{3 lines} = 200 min$

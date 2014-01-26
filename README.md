@@ -38,7 +38,7 @@ v <br>
 \choice Nobody <br>
 \choice Only cats <br>
 Obviously, everybody likes chicken, what else needs to be said? <br>
-<br>
+
 Look at the acompanying image of a llama, how many teeth are visible?  \includegraphics[width = 2in]{llama.jpg} <br>
 h <br>
 \correctchoice 4 <br>
@@ -47,7 +47,7 @@ h <br>
 \choice 63 <br>
 \choice 9 <br>
 There were 4 visible, that other thing is a breathmint. <br> 
-<br>
+
 If I code at 3 lines a minute, how long will it take me to write 600 lines? <br>
 v <br>
 \correctchoice 200 min <br>
@@ -56,7 +56,7 @@ v <br>
 \choice until the end of time <br>
 \choice 100 min <br>
 To calculate the time we will use unit conversion\\ $600 lines \cdot \frac{1 min}{3 lines} = 200 min$ <br>
-<br>
+
 **********************************************
 
 

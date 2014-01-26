@@ -12,10 +12,9 @@ The format of the questions in the .txt file should be as described below.
 After running, 3 .tex files will appear after running.
 To generate a key, uncomment line 9 in the .tex file (remove the % from '%\printanswers ') and run. 
 The 3 test versions will contain the same questions in randomly shuffled orders, with the choices shuffled within each question.
-\\
+\n
 feel free to contact me with questions Imasillypirate@gmail.com
-\\
-\\
+
 =====================
 Formatting for .txt:
 

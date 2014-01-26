@@ -39,14 +39,14 @@ v <br>
 \choice Only cats <br>
 Obviously, everybody likes chicken, what else needs to be said? <br>
 
-Look at the acompanying image of a llama, how many teeth are visible?  \includegraphics[width = 2in]{llama.jpg} <br>
+Look at the accompanying image of a llama, how many teeth are visible?  \includegraphics[width = 2in]{llama.jpg} <br>
 h <br>
 \correctchoice 4 <br>
 \choice 2 <br>
 \choice 5 <br>
 \choice 63 <br>
 \choice 9 <br>
-There were 4 visible, that other thing is a breathmint. <br> 
+There were 4 visible, that other thing is a breath-mint. <br> 
 
 If I code at 3 lines a minute, how long will it take me to write 600 lines? <br>
 v <br>

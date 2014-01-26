@@ -13,50 +13,50 @@ After running, 3 .tex files will appear after running.
 To generate a key, uncomment line 9 in the .tex file (remove the % from '%\printanswers ') and run. 
 The 3 test versions will contain the same questions in randomly shuffled orders, with the choices shuffled within each question.
 <br>
-feel free to contact me with questions Imasillypirate@gmail.com
+Feel free to contact me with questions Imasillypirate@gmail.com
 
 =====================
-Formatting for .txt:
+Formatting for .txt:<br>
 
--Question (this is where your question goes)
--v or h (put a v here if you want the choices listed vertically, and h if you want them horizontally)
--this and the following 4 lines should contain the options, each starting with '\choice' except the correct choice, which should start with '\correctchoice' 
--option 2
--option 2
--option 2
--option 2
--This line should contain a short explanation as to why the right answer is the correct choice. (this will show up on the Key only)
--there should be a line left blank between this question and the next
+-Question (this is where your question goes)<br>
+-v or h (put a v here if you want the choices listed vertically, and h if you want them horizontally)<br>
+-this and the following 4 lines should contain the options, each starting with '\choice' except the correct choice, which should start with '\correctchoice' <br>
+-option 2 <br>
+-option 3 <br>
+-option 4 <br>
+-option 5 <br>
+-This line should contain a short explanation as to why the right answer is the correct choice. (this will show up on the Key only) <br>
+-there should be a line left blank between this question and the next <br>
 
-example: The questions for a 3 question quiz might look like that written between the lines of astrisks:
+example: The questions for a 3 question quiz might look like that written between the lines of astrisks:<br>
 **********************************************
-Who likes chicken?
-v
-\choice Only me
-\choice Only your mother
-\correctchoice Everybody
-\choice Nobody
-\choice Only cats
-Obviously, everybody likes chicken, what else needs to be said?
-
-Look at the acompanying image of a llama, how many teeth are visible?  \includegraphics[width = 2in]{llama.jpg} 
-h
-\correctchoice 4 
-\choice 2
-\choice 5
-\choice 63
-\choice 9
-There were 4 visible, that other thing is a breathmint. 
-
-If I code at 3 lines a minute, how long will it take me to write 600 lines?
-v
-\correctchoice 200 min
-\choice 3 min
-\choice 63 days
-\choice until the end of time
-\choice 100 min
-To calculate the time we will use unit conversion\\ $600 lines \cdot \frac{1 min}{3 lines} = 200 min$
-
+Who likes chicken? <br>
+v <br>
+\choice Only me <br>
+\choice Only your mother <br>
+\correctchoice Everybody <br>
+\choice Nobody <br>
+\choice Only cats <br>
+Obviously, everybody likes chicken, what else needs to be said? <br>
+<br>
+Look at the acompanying image of a llama, how many teeth are visible?  \includegraphics[width = 2in]{llama.jpg} <br>
+h <br>
+\correctchoice 4 <br>
+\choice 2 <br>
+\choice 5 <br>
+\choice 63 <br>
+\choice 9 <br>
+There were 4 visible, that other thing is a breathmint. <br> 
+<br>
+If I code at 3 lines a minute, how long will it take me to write 600 lines? <br>
+v <br>
+\correctchoice 200 min <br>
+\choice 3 min <br>
+\choice 63 days <br>
+\choice until the end of time <br>
+\choice 100 min <br>
+To calculate the time we will use unit conversion\\ $600 lines \cdot \frac{1 min}{3 lines} = 200 min$ <br>
+<br>
 **********************************************
 
 

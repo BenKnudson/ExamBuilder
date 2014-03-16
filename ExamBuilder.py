@@ -17,9 +17,10 @@
 
 from random import shuffle
 exNum = 1 #exam number
-nq = 7 #number of questions
+exNam = 'Optics'
+nq = 3 #number of questions
 cls = 'Phys195 - Spring 2014' #Name of the class to appear in the header
-ex = str(exNum)
+ex = 'Test ' + str(exNum) + '- ' + exNam
 
 version = ['A','B','C'] # 3 versions of the exam
 Qlist = range(1,nq+1) #question numbers
@@ -65,7 +66,7 @@ for i in version:
 		texfile.write('\n')
 		
 		texfile.write('\\begin{center} \n')
-		texfile.write('\\fbox{\\fbox{\\parbox{5.5in}{\\centering This exam contains 15 questions. You will have 50 minutes to complete the exam. Record the answer that you would like graded on your scantron. Make sure to put your name and RedId on the scantron.}}} \n')
+		texfile.write('\\fbox{\\fbox{\\parbox{5.5in}{\\centering This exam contains 3 questions. You will have 15 minutes to complete the exam. Record the answer that you would like graded on your scantron. Make sure to put your name and RedId on the scantron.}}} \n')
 		texfile.write('\\end{center} \n')
 		texfile.write('\\vspace{0.3in} \n')
 		texfile.write('\\makebox[\\textwidth]{Name:\\enspace\\hrulefill} \n')

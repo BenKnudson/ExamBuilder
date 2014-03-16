@@ -19,7 +19,7 @@ from random import shuffle
 exNum = 1 #exam number
 exNam = 'Optics'
 nq = 3 #number of questions
-cls = 'Phys195 - Spring 2014' #Name of the class to appear in the header
+cls = 'Physics - 2014' #Name of the class to appear in the header
 ex = 'Test ' + str(exNum) + '- ' + exNam
 
 version = ['A','B','C'] # 3 versions of the exam

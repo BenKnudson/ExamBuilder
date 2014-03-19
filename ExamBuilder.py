@@ -47,60 +47,64 @@ for q in Qlist:
 	Stacks[q] = stack
 
 
-for i in version:
-	shuffle(Qlist) #determine question order
+# for i in version:
+	# shuffle(Qlist) #determine question order
 	
-	FileName = 'Test-'+ex+'-V'+i+'.tex'
-	with open(FileName, 'w') as texfile:
-		texfile.write('\\documentclass[12pt,addpoints]{exam} \n')
-		texfile.write('\\usepackage{graphicx} \n')
-		texfile.write('\\pagestyle{headandfoot} \n')
-		texfile.write('\\runningheadrule \n')
-		texfile.write('\\firstpageheader{'+cls+'}{Test '+ex+' Version '+i+'}{ } \n')
-		texfile.write('\\runningheader{'+cls+'}{'+ex+' Version '+i+'} {\\thepage} \n')
-		texfile.write('\\firstpagefooter{Physics}{Version '+i+'}{\\thepage} \n')
-		texfile.write('\\runningfooter{Physics}{Version '+i+'}{\\thepage} \n')
-		texfile.write('%\\printanswers \n')
-		texfile.write('\n')
-		texfile.write('\\begin{document} \n')
-		texfile.write('\\ifprintanswers \\begin{center} \\huge KEY \\end{center} \\fi \n')
-		texfile.write('\n')
+	# FileName = 'Test-'+ex+'-V'+i+'.tex'
+	# with open(FileName, 'w') as texfile:
+		# texfile.write('\\documentclass[12pt,addpoints]{exam} \n')
+		# texfile.write('\\usepackage{graphicx} \n')
+		# texfile.write('\\pagestyle{headandfoot} \n')
+		# texfile.write('\\runningheadrule \n')
+		# texfile.write('\\firstpageheader{'+cls+'}{Test '+ex+' Version '+i+'}{ } \n')
+		# texfile.write('\\runningheader{'+cls+'}{'+ex+' Version '+i+'} {\\thepage} \n')
+		# texfile.write('\\firstpagefooter{Physics}{Version '+i+'}{\\thepage} \n')
+		# texfile.write('\\runningfooter{Physics}{Version '+i+'}{\\thepage} \n')
+		# texfile.write('%\\printanswers \n')
+		# texfile.write('\n')
+		# texfile.write('\\begin{document} \n')
+		# texfile.write('\\ifprintanswers \\begin{center} \\huge KEY \\end{center} \\fi \n')
+		# texfile.write('\n')
 		
-		texfile.write('\\begin{center} \n')
-		texfile.write('\\fbox{\\fbox{\\parbox{5.5in}{\\centering This exam contains '+str(nq)+' questions. You will have 15 minutes to complete the exam. Record the answer that you would like graded on your scantron. Make sure to put your name and RedId on the scantron.}}} \n')
-		texfile.write('\\end{center} \n \n')
-		texfile.write('\\vspace{0.3in} \n')
-		texfile.write('\\makebox[\\textwidth]{\\enspace} \n')
+		# texfile.write('\\begin{center} \n')
+		# texfile.write('\\fbox{\\fbox{\\parbox{5.5in}{\\centering This exam contains '+str(nq)+' questions. You will have 15 minutes to complete the exam. Record the answer that you would like graded on your scantron. Make sure to put your name and RedId on the scantron.}}} \n')
+		# texfile.write('\\end{center} \n \n')
+		# texfile.write('\\vspace{0.3in} \n')
+		# texfile.write('\\makebox[\\textwidth]{\\enspace} \n')
 	
-		texfile.write('\\begin{questions} \n \n')
+		# texfile.write('\\begin{questions} \n \n')
 		
-		for k in Qlist: #write questions
-			Ans = Answers[k]
-			shuffle(Ans) #Determine Choice order
-			texfile.write('\\begin{minipage}{\\textwidth} \n')
-			texfile.write('\\question \n')
-			texfile.write(Questions[k]) #the question
-#			texfile.write('\\answerline[\\ref{Ans'+str(k)+'}] \n')
+		# for k in Qlist: #write questions
+			# Ans = Answers[k]
+			# shuffle(Ans) #Determine Choice order
+			# texfile.write('\\begin{minipage}{\\textwidth} \n')
+			# texfile.write('\\question \n')
+			# texfile.write(Questions[k]) #the question
+###			texfile.write('\\answerline[\\ref{Ans'+str(k)+'}] \n')
 			
-			if Stacks[k] in 'h\n': #determine layout of choices
-				choiceStyle = 'oneparchoices'
-				ln = '\\'
-			else:
-				choiceStyle = 'choices'
-				ln =  ' ' 
-			texfile.write('\\begin{'+choiceStyle+'}'+ln+' \n')
+			# if Stacks[k] in 'h\n': #determine layout of choices
+				# choiceStyle = 'oneparchoices'
+				# ln = '\\'
+			# else:
+				# choiceStyle = 'choices'
+				# ln =  ' ' 
+			# texfile.write('\\begin{'+choiceStyle+'}'+ln+' \n')
 			
-			for j in Ans: #write choices
-				texfile.write(j)
+			# for j in Ans: #write choices
+				# texfile.write(j)
 			
-			texfile.write('\\end{'+choiceStyle+'} \n')
+			# texfile.write('\\end{'+choiceStyle+'} \n')
 			
-			texfile.write('\\begin{solution} \n')
-			texfile.write(Solutions[k])
-			texfile.write('\\end{solution} \n')
-			texfile.write('\\vspace{0.2in} \n')
-			texfile.write('\\end{minipage} \n')
-			texfile.write('\n')
+			# texfile.write('\\begin{solution} \n')
+			# texfile.write(Solutions[k])
+			# texfile.write('\\end{solution} \n')
+			# texfile.write('\\vspace{0.2in} \n')
+			# texfile.write('\\end{minipage} \n')
+			# texfile.write('\n')
 			
-		texfile.write('\\end{questions} \n')
-		texfile.write('\\end{document}')    
+		# texfile.write('\\end{questions} \n')
+		# texfile.write('\\end{document}')    
+print Answers
+print Questions
+print Solutions
+print Stacks
